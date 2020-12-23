@@ -20,7 +20,6 @@ require (
 	github.com/hashicorp/go-plugin v0.0.0-20190610192547-a1bc61569a26
 	github.com/joho/godotenv v1.3.0
 	github.com/kubernetes-csi/external-snapshotter/client/v4 v4.0.0
-	//github.com/kubernetes-csi/external-snapshotter/v2 v2.2.0-rc3
 	github.com/onsi/ginkgo v1.14.2
 	github.com/onsi/gomega v1.10.2
 	github.com/pkg/errors v0.9.1
