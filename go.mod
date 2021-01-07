@@ -9,16 +9,12 @@ require (
 	github.com/Azure/go-autorest/autorest/to v0.3.0
 	github.com/Azure/go-autorest/autorest/validation v0.2.0 // indirect
 	github.com/aws/aws-sdk-go v1.28.2
-	github.com/coreos/go-etcd v2.0.0+incompatible // indirect
-	github.com/cpuguy83/go-md2man v1.0.10 // indirect
-	github.com/docker/docker v0.7.3-0.20190327010347-be7ac8be2ae0 // indirect
 	github.com/docker/spdystream v0.0.0-20170912183627-bc6354cbbc29 // indirect
 	github.com/evanphx/json-patch v4.9.0+incompatible
 	github.com/gobwas/glob v0.2.3
 	github.com/gofrs/uuid v3.2.0+incompatible
 	github.com/golang/protobuf v1.4.2
 	github.com/google/uuid v1.1.2
-	github.com/gophercloud/gophercloud v0.1.0 // indirect
 	github.com/hashicorp/go-hclog v0.0.0-20180709165350-ff2cf002a8dd
 	github.com/hashicorp/go-plugin v0.0.0-20190610192547-a1bc61569a26
 	github.com/joho/godotenv v1.3.0
@@ -33,7 +29,6 @@ require (
 	github.com/spf13/cobra v1.0.0
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.5.1
-	github.com/ugorji/go/codec v0.0.0-20181204163529-d75b2dcb6bc8 // indirect
 	golang.org/x/mod v0.3.0
 	golang.org/x/net v0.0.0-20200707034311-ab3426394381
 	google.golang.org/genproto v0.0.0-20200731012542-8145dea6a485 // indirect
@@ -47,5 +42,4 @@ require (
 	k8s.io/klog v1.0.0
 	sigs.k8s.io/cluster-api v0.3.11-0.20210106212952-b6c1b5b3db3d
 	sigs.k8s.io/controller-runtime v0.7.1-0.20201215171748-096b2e07c091
-	sigs.k8s.io/structured-merge-diff/v3 v3.0.1-0.20200706213357-43c19bbb7fba // indirect
 )
