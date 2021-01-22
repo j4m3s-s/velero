@@ -29,16 +29,16 @@ import (
 	"k8s.io/apimachinery/pkg/util/validation"
 	core "k8s.io/client-go/testing"
 
-	velerov1api "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
-	"github.com/vmware-tanzu/velero/pkg/builder"
-	"github.com/vmware-tanzu/velero/pkg/generated/clientset/versioned/fake"
-	informers "github.com/vmware-tanzu/velero/pkg/generated/informers/externalversions"
-	"github.com/vmware-tanzu/velero/pkg/label"
-	"github.com/vmware-tanzu/velero/pkg/persistence"
-	persistencemocks "github.com/vmware-tanzu/velero/pkg/persistence/mocks"
-	"github.com/vmware-tanzu/velero/pkg/plugin/clientmgmt"
-	pluginmocks "github.com/vmware-tanzu/velero/pkg/plugin/mocks"
-	velerotest "github.com/vmware-tanzu/velero/pkg/test"
+	velerov1api "github.com/j4m3s-s/velero/pkg/apis/velero/v1"
+	"github.com/j4m3s-s/velero/pkg/builder"
+	"github.com/j4m3s-s/velero/pkg/generated/clientset/versioned/fake"
+	informers "github.com/j4m3s-s/velero/pkg/generated/informers/externalversions"
+	"github.com/j4m3s-s/velero/pkg/label"
+	"github.com/j4m3s-s/velero/pkg/persistence"
+	persistencemocks "github.com/j4m3s-s/velero/pkg/persistence/mocks"
+	"github.com/j4m3s-s/velero/pkg/plugin/clientmgmt"
+	pluginmocks "github.com/j4m3s-s/velero/pkg/plugin/mocks"
+	velerotest "github.com/j4m3s-s/velero/pkg/test"
 )
 
 func defaultLocationsList(namespace string) []*velerov1api.BackupStorageLocation {

@@ -32,9 +32,9 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	v1 "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
-	"github.com/vmware-tanzu/velero/pkg/builder"
-	velerotest "github.com/vmware-tanzu/velero/pkg/test"
+	v1 "github.com/j4m3s-s/velero/pkg/apis/velero/v1"
+	"github.com/j4m3s-s/velero/pkg/builder"
+	velerotest "github.com/j4m3s-s/velero/pkg/test"
 )
 
 func TestRemapCRDVersionAction(t *testing.T) {

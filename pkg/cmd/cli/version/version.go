@@ -27,10 +27,10 @@ import (
 	"golang.org/x/mod/semver"
 	kbclient "sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/vmware-tanzu/velero/pkg/buildinfo"
-	"github.com/vmware-tanzu/velero/pkg/client"
-	"github.com/vmware-tanzu/velero/pkg/cmd"
-	"github.com/vmware-tanzu/velero/pkg/cmd/cli/serverstatus"
+	"github.com/j4m3s-s/velero/pkg/buildinfo"
+	"github.com/j4m3s-s/velero/pkg/client"
+	"github.com/j4m3s-s/velero/pkg/cmd"
+	"github.com/j4m3s-s/velero/pkg/cmd/cli/serverstatus"
 )
 
 func NewCommand(f client.Factory) *cobra.Command {

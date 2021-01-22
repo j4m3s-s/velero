@@ -32,13 +32,13 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	velerov1api "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
-	velerov1client "github.com/vmware-tanzu/velero/pkg/generated/clientset/versioned/typed/velero/v1"
-	velerov1informers "github.com/vmware-tanzu/velero/pkg/generated/informers/externalversions/velero/v1"
-	velerov1listers "github.com/vmware-tanzu/velero/pkg/generated/listers/velero/v1"
-	"github.com/vmware-tanzu/velero/pkg/persistence"
-	"github.com/vmware-tanzu/velero/pkg/plugin/clientmgmt"
-	"github.com/vmware-tanzu/velero/pkg/util/kube"
+	velerov1api "github.com/j4m3s-s/velero/pkg/apis/velero/v1"
+	velerov1client "github.com/j4m3s-s/velero/pkg/generated/clientset/versioned/typed/velero/v1"
+	velerov1informers "github.com/j4m3s-s/velero/pkg/generated/informers/externalversions/velero/v1"
+	velerov1listers "github.com/j4m3s-s/velero/pkg/generated/listers/velero/v1"
+	"github.com/j4m3s-s/velero/pkg/persistence"
+	"github.com/j4m3s-s/velero/pkg/plugin/clientmgmt"
+	"github.com/j4m3s-s/velero/pkg/util/kube"
 )
 
 type downloadRequestController struct {

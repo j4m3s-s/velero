@@ -31,10 +31,10 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/controller"
 
-	"github.com/vmware-tanzu/velero/internal/velero"
-	velerov1api "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
-	"github.com/vmware-tanzu/velero/pkg/buildinfo"
-	"github.com/vmware-tanzu/velero/pkg/plugin/framework"
+	"github.com/j4m3s-s/velero/internal/velero"
+	velerov1api "github.com/j4m3s-s/velero/pkg/apis/velero/v1"
+	"github.com/j4m3s-s/velero/pkg/buildinfo"
+	"github.com/j4m3s-s/velero/pkg/plugin/framework"
 )
 
 const (

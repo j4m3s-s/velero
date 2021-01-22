@@ -26,9 +26,9 @@ import (
 
 	kbclient "sigs.k8s.io/controller-runtime/pkg/client"
 
-	velerov1api "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
-	"github.com/vmware-tanzu/velero/pkg/client"
-	"github.com/vmware-tanzu/velero/pkg/cmd"
+	velerov1api "github.com/j4m3s-s/velero/pkg/apis/velero/v1"
+	"github.com/j4m3s-s/velero/pkg/client"
+	"github.com/j4m3s-s/velero/pkg/cmd"
 )
 
 func NewSetCommand(f client.Factory, use string) *cobra.Command {

@@ -31,13 +31,13 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/kubernetes/fake"
 
-	velerov1api "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
-	"github.com/vmware-tanzu/velero/pkg/builder"
-	"github.com/vmware-tanzu/velero/pkg/buildinfo"
-	velerofake "github.com/vmware-tanzu/velero/pkg/generated/clientset/versioned/fake"
-	"github.com/vmware-tanzu/velero/pkg/plugin/velero"
-	velerotest "github.com/vmware-tanzu/velero/pkg/test"
-	"github.com/vmware-tanzu/velero/pkg/util/kube"
+	velerov1api "github.com/j4m3s-s/velero/pkg/apis/velero/v1"
+	"github.com/j4m3s-s/velero/pkg/builder"
+	"github.com/j4m3s-s/velero/pkg/buildinfo"
+	velerofake "github.com/j4m3s-s/velero/pkg/generated/clientset/versioned/fake"
+	"github.com/j4m3s-s/velero/pkg/plugin/velero"
+	velerotest "github.com/j4m3s-s/velero/pkg/test"
+	"github.com/j4m3s-s/velero/pkg/util/kube"
 )
 
 func TestGetImage(t *testing.T) {

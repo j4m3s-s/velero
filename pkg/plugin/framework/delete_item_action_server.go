@@ -23,9 +23,9 @@ import (
 	"golang.org/x/net/context"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 
-	api "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
-	proto "github.com/vmware-tanzu/velero/pkg/plugin/generated"
-	"github.com/vmware-tanzu/velero/pkg/plugin/velero"
+	api "github.com/j4m3s-s/velero/pkg/apis/velero/v1"
+	proto "github.com/j4m3s-s/velero/pkg/plugin/generated"
+	"github.com/j4m3s-s/velero/pkg/plugin/velero"
 )
 
 // DeleteItemActionGRPCServer implements the proto-generated DeleteItemActionServer interface, and accepts

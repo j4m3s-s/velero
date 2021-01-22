@@ -28,10 +28,10 @@ import (
 	kubeerrs "k8s.io/apimachinery/pkg/util/errors"
 	kbclient "sigs.k8s.io/controller-runtime/pkg/client"
 
-	velerov1api "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
-	"github.com/vmware-tanzu/velero/pkg/client"
-	"github.com/vmware-tanzu/velero/pkg/cmd"
-	"github.com/vmware-tanzu/velero/pkg/cmd/cli"
+	velerov1api "github.com/j4m3s-s/velero/pkg/apis/velero/v1"
+	"github.com/j4m3s-s/velero/pkg/client"
+	"github.com/j4m3s-s/velero/pkg/cmd"
+	"github.com/j4m3s-s/velero/pkg/cmd/cli"
 )
 
 // NewDeleteCommand creates and returns a new cobra command for deleting backup-locations.

@@ -26,11 +26,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	velerov1api "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
-	"github.com/vmware-tanzu/velero/pkg/builder"
-	"github.com/vmware-tanzu/velero/pkg/kuberesource"
-	"github.com/vmware-tanzu/velero/pkg/plugin/velero"
-	velerotest "github.com/vmware-tanzu/velero/pkg/test"
+	velerov1api "github.com/j4m3s-s/velero/pkg/apis/velero/v1"
+	"github.com/j4m3s-s/velero/pkg/builder"
+	"github.com/j4m3s-s/velero/pkg/kuberesource"
+	"github.com/j4m3s-s/velero/pkg/plugin/velero"
+	velerotest "github.com/j4m3s-s/velero/pkg/test"
 )
 
 func TestInitContainerRestoreHookPodActionExecute(t *testing.T) {

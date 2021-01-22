@@ -23,7 +23,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/watch"
 
-	"github.com/vmware-tanzu/velero/pkg/client"
+	"github.com/j4m3s-s/velero/pkg/client"
 )
 
 type FakeDynamicFactory struct {

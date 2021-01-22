@@ -23,8 +23,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/vmware-tanzu/velero/pkg/client"
-	"github.com/vmware-tanzu/velero/pkg/cmd"
+	"github.com/j4m3s-s/velero/pkg/client"
+	"github.com/j4m3s-s/velero/pkg/cmd"
 )
 
 func NewSetCommand() *cobra.Command {

@@ -21,9 +21,9 @@ import (
 	"github.com/sirupsen/logrus"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 
-	"github.com/vmware-tanzu/velero/internal/hook"
-	"github.com/vmware-tanzu/velero/pkg/kuberesource"
-	"github.com/vmware-tanzu/velero/pkg/plugin/velero"
+	"github.com/j4m3s-s/velero/internal/hook"
+	"github.com/j4m3s-s/velero/pkg/kuberesource"
+	"github.com/j4m3s-s/velero/pkg/plugin/velero"
 )
 
 // InitRestoreHookPodAction is a RestoreItemAction plugin applicable to pods that runs

@@ -26,8 +26,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/sets"
 
-	"github.com/vmware-tanzu/velero/pkg/plugin/velero"
-	"github.com/vmware-tanzu/velero/pkg/util/boolptr"
+	"github.com/j4m3s-s/velero/pkg/plugin/velero"
+	"github.com/j4m3s-s/velero/pkg/util/boolptr"
 )
 
 const annotationLastAppliedConfig = "kubectl.kubernetes.io/last-applied-configuration"

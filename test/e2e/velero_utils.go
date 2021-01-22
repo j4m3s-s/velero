@@ -11,11 +11,11 @@ import (
 
 	"github.com/pkg/errors"
 
-	velerov1api "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
-	"github.com/vmware-tanzu/velero/pkg/client"
-	cliinstall "github.com/vmware-tanzu/velero/pkg/cmd/cli/install"
-	"github.com/vmware-tanzu/velero/pkg/cmd/util/flag"
-	"github.com/vmware-tanzu/velero/pkg/install"
+	velerov1api "github.com/j4m3s-s/velero/pkg/apis/velero/v1"
+	"github.com/j4m3s-s/velero/pkg/client"
+	cliinstall "github.com/j4m3s-s/velero/pkg/cmd/cli/install"
+	"github.com/j4m3s-s/velero/pkg/cmd/util/flag"
+	"github.com/j4m3s-s/velero/pkg/install"
 )
 
 func getProviderPlugins(providerName string) []string {

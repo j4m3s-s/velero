@@ -27,13 +27,13 @@ import (
 	snapshotv1beta1api "github.com/kubernetes-csi/external-snapshotter/client/v4/apis/volumesnapshot/v1beta1"
 	snapshotv1beta1client "github.com/kubernetes-csi/external-snapshotter/client/v4/clientset/versioned"
 
-	velerov1api "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
-	pkgbackup "github.com/vmware-tanzu/velero/pkg/backup"
-	"github.com/vmware-tanzu/velero/pkg/client"
-	"github.com/vmware-tanzu/velero/pkg/cmd"
-	"github.com/vmware-tanzu/velero/pkg/cmd/util/output"
-	"github.com/vmware-tanzu/velero/pkg/features"
-	"github.com/vmware-tanzu/velero/pkg/label"
+	velerov1api "github.com/j4m3s-s/velero/pkg/apis/velero/v1"
+	pkgbackup "github.com/j4m3s-s/velero/pkg/backup"
+	"github.com/j4m3s-s/velero/pkg/client"
+	"github.com/j4m3s-s/velero/pkg/cmd"
+	"github.com/j4m3s-s/velero/pkg/cmd/util/output"
+	"github.com/j4m3s-s/velero/pkg/features"
+	"github.com/j4m3s-s/velero/pkg/label"
 )
 
 func NewDescribeCommand(f client.Factory, use string) *cobra.Command {

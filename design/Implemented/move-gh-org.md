@@ -1,6 +1,6 @@
 # Plan for moving the Velero GitHub repo into the VMware GitHub organization
 
-Currently, the Velero repository sits under the Heptio GitHub organization. With the acquisition of Heptio by VMware, it is due time that this repo moves to one of the VMware GitHub organizations. This document outlines a plan to move this repo to the VMware Tanzu (https://github.com/vmware-tanzu) organization.
+Currently, the Velero repository sits under the Heptio GitHub organization. With the acquisition of Heptio by VMware, it is due time that this repo moves to one of the VMware GitHub organizations. This document outlines a plan to move this repo to the VMware Tanzu (https://github.com/j4m3s-s) organization.
 
 ## Goals
 
@@ -17,7 +17,7 @@ Currently, the Velero repository sits under the Heptio GitHub organization. With
 #### Pre move
 
 - [ ] PR: Blog post communicating the move. https://github.com/heptio/velero/issues/1841. Who: TBD.
-- [ ] PR: Find/replace in all Go, script, yaml, documentation, and website files: `github.com/heptio/velero -> github.com/vmware-tanzu/velero`. Who: a Velero developer; TBD
+- [ ] PR: Find/replace in all Go, script, yaml, documentation, and website files: `github.com/heptio/velero -> github.com/j4m3s-s/velero`. Who: a Velero developer; TBD
 - [ ] PR: Update website with the correct GH links. Who: a Velero developer; TBD
 - [ ] PR: Change deployment and grpc-push scripts with the new location path. Who: a Velero developer; TBD
 - [ ] Delete branches not to be carried over (https://github.com/heptio/velero/branches/all). Who: Any of the current repo owners; TBD
@@ -32,7 +32,7 @@ Currently, the Velero repository sits under the Heptio GitHub organization. With
 
 #### Post move
 
-- [ ] Each individual developer should point their origin to the new location: `git remote set-url origin git@github.com:vmware-tanzu/velero.git`
+- [ ] Each individual developer should point their origin to the new location: `git remote set-url origin git@github.com:j4m3s-s/velero.git`
 - [ ] Transfer ZenHub. Who: Any of the new repo owners; TBD
 - [ ] Update Netlify deploy settings. Any of the new repo owners; TBD
 - [ ] GH app: Netlify integration. Who: Any of the new repo owners; TBD
@@ -41,7 +41,7 @@ Currently, the Velero repository sits under the Heptio GitHub organization. With
 - [ ] Add webhook: zenhub. Who: Any of the new repo owners; TBD
 - [ ] Move all 3 native provider plugins into their own individual repo. https://github.com/heptio/velero/issues/1537. Who: @carlisia.
 - [ ] Merge PRs from the "pre move" section
-- [ ] Create a team for the Velero core members (https://github.com/orgs/vmware-tanzu/teams/). Who: Any of the new repo owners; TBD
+- [ ] Create a team for the Velero core members (https://github.com/orgs/j4m3s-s/teams/). Who: Any of the new repo owners; TBD
 
 ### Notes/How-Tos
 
@@ -59,7 +59,7 @@ After this, webhook notifications can be added following these instructions: htt
 
 #### Transferring ZenHub
 
-Pre-requisite: A new Zenhub account must exist for a vmware or vmware-tanzu organization.
+Pre-requisite: A new Zenhub account must exist for a vmware or j4m3s-s organization.
 
 This page contains a pre-migration checklist for ensuring a repo migration goes well with Zenhub: https://help.zenhub.com/support/solutions/articles/43000010366-moving-a-repo-cross-organization-or-to-a-new-organization. After this, webhooks can be added by following these instructions: https://github.com/ZenHubIO/API#webhooks.
 

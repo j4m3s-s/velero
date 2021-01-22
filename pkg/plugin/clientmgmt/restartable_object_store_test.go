@@ -26,8 +26,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/vmware-tanzu/velero/pkg/plugin/framework"
-	providermocks "github.com/vmware-tanzu/velero/pkg/plugin/velero/mocks"
+	"github.com/j4m3s-s/velero/pkg/plugin/framework"
+	providermocks "github.com/j4m3s-s/velero/pkg/plugin/velero/mocks"
 )
 
 func TestRestartableGetObjectStore(t *testing.T) {

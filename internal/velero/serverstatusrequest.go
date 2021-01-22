@@ -17,8 +17,8 @@ limitations under the License.
 package velero
 
 import (
-	velerov1api "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
-	"github.com/vmware-tanzu/velero/pkg/plugin/framework"
+	velerov1api "github.com/j4m3s-s/velero/pkg/apis/velero/v1"
+	"github.com/j4m3s-s/velero/pkg/plugin/framework"
 )
 
 type PluginLister interface {

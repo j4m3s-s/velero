@@ -12,7 +12,7 @@ import (
 	"golang.org/x/net/context"
 	"k8s.io/client-go/kubernetes"
 
-	veleroexec "github.com/vmware-tanzu/velero/pkg/util/exec"
+	veleroexec "github.com/j4m3s-s/velero/pkg/util/exec"
 )
 
 const (
@@ -22,7 +22,7 @@ const (
 func installKibishii(ctx context.Context, namespace string, cloudPlatform string) error {
 	// We use kustomize to generate YAML for Kibishii from the checked-in yaml directories
 	kibishiiInstallCmd := exec.CommandContext(ctx, "kubectl", "apply", "-n", namespace, "-k",
-		"github.com/vmware-tanzu-experiments/distributed-data-generator/kubernetes/yaml/"+cloudPlatform)
+		"github.com/j4m3s-s-experiments/distributed-data-generator/kubernetes/yaml/"+cloudPlatform)
 
 	_, _, err := veleroexec.RunCommand(kibishiiInstallCmd)
 	if err != nil {

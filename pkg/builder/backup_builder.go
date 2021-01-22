@@ -21,9 +21,9 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	velerov1api "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
+	velerov1api "github.com/j4m3s-s/velero/pkg/apis/velero/v1"
 
-	"github.com/vmware-tanzu/velero/pkg/util/boolptr"
+	"github.com/j4m3s-s/velero/pkg/util/boolptr"
 )
 
 /*

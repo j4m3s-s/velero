@@ -8,16 +8,16 @@ This document defines the project governance for Velero.
 
 ## Code Repositories
 
-The following code repositories are governed by Velero community and maintained under the `vmware-tanzu\Velero` organization.
+The following code repositories are governed by Velero community and maintained under the `j4m3s-s\Velero` organization.
 
-* **[Velero](https://github.com/vmware-tanzu/velero):** Main Velero codebase
-* **[Helm Chart](https://github.com/vmware-tanzu/helm-charts/tree/main/charts/velero):** The Helm chart for the Velero server component
-* **[Velero CSI Plugin](https://github.com/vmware-tanzu/velero-plugin-for-csi):** This repository contains Velero plugins for snapshotting CSI backed PVCs using the CSI beta snapshot APIs
-* **[Velero Plugin for vSphere](https://github.com/vmware-tanzu/velero-plugin-for-vsphere):** This repository contains the Velero Plugin for vSphere. This plugin is a volume snapshotter plugin that provides crash-consistent snapshots of vSphere block volumes and backup of volume data into S3 compatible storage.
-* **[Velero Plugin for AWS](https://github.com/vmware-tanzu/velero-plugin-for-aws):** This repository contains the plugins to support running Velero on AWS, including the object store plugin and the volume snapshotter plugin
-* **[Velero Plugin for GCP](https://github.com/vmware-tanzu/velero-plugin-for-gcp):** This repository contains the plugins to support running Velero on GCP, including the object store plugin and the volume snapshotter plugin
-* **[Velero Plugin for Azure](https://github.com/vmware-tanzu/velero-plugin-for-microsoft-azure):** This repository contains the plugins to support running Velero on Azure, including the object store plugin and the volume snapshotter plugin
-* **[Velero Plugin Example](https://github.com/vmware-tanzu/velero-plugin-example):** This repository contains example plugins for Velero
+* **[Velero](https://github.com/j4m3s-s/velero):** Main Velero codebase
+* **[Helm Chart](https://github.com/j4m3s-s/helm-charts/tree/main/charts/velero):** The Helm chart for the Velero server component
+* **[Velero CSI Plugin](https://github.com/j4m3s-s/velero-plugin-for-csi):** This repository contains Velero plugins for snapshotting CSI backed PVCs using the CSI beta snapshot APIs
+* **[Velero Plugin for vSphere](https://github.com/j4m3s-s/velero-plugin-for-vsphere):** This repository contains the Velero Plugin for vSphere. This plugin is a volume snapshotter plugin that provides crash-consistent snapshots of vSphere block volumes and backup of volume data into S3 compatible storage.
+* **[Velero Plugin for AWS](https://github.com/j4m3s-s/velero-plugin-for-aws):** This repository contains the plugins to support running Velero on AWS, including the object store plugin and the volume snapshotter plugin
+* **[Velero Plugin for GCP](https://github.com/j4m3s-s/velero-plugin-for-gcp):** This repository contains the plugins to support running Velero on GCP, including the object store plugin and the volume snapshotter plugin
+* **[Velero Plugin for Azure](https://github.com/j4m3s-s/velero-plugin-for-microsoft-azure):** This repository contains the plugins to support running Velero on Azure, including the object store plugin and the volume snapshotter plugin
+* **[Velero Plugin Example](https://github.com/j4m3s-s/velero-plugin-example):** This repository contains example plugins for Velero
 
 
 ## Community Roles
@@ -67,12 +67,12 @@ interested in implementing the proposal should be either deeply engaged in the
 proposal process or be an author of the proposal.
 
 The proposal should be documented as a separated markdown file pushed to the root of the 
-`design` folder in the [Velero](https://github.com/vmware-tanzu/velero/tree/main/design)
+`design` folder in the [Velero](https://github.com/j4m3s-s/velero/tree/main/design)
 repository via PR. The name of the file should follow the name pattern `<short
 meaningful words joined by '-'>_design.md`, e.g:
 `restore-hooks-design.md`.
 
-Use the [Proposal Template](https://github.com/vmware-tanzu/velero/blob/main/design/_template.md) as a starting point.
+Use the [Proposal Template](https://github.com/j4m3s-s/velero/blob/main/design/_template.md) as a starting point.
 
 ### Proposal Lifecycle
 
@@ -88,7 +88,7 @@ To maintain velocity in a project as busy as Velero, the concept of [Lazy
 Consensus](http://en.osswiki.info/concepts/lazy_consensus) is practiced. Ideas
 and / or proposals should be shared by maintainers via
 GitHub with the appropriate maintainer groups (e.g.,
-`@vmware-tanzu/velero-maintainers`) tagged. Out of respect for other contributors,
+`@j4m3s-s/velero-maintainers`) tagged. Out of respect for other contributors,
 major changes should also be accompanied by a ping on Slack or a note on the
 Velero mailing list as appropriate. Author(s) of proposal, Pull Requests,
 issues, etc.  will give a time period of no less than five (5) working days for

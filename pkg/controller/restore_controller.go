@@ -38,19 +38,19 @@ import (
 	"k8s.io/apimachinery/pkg/util/sets"
 	"k8s.io/client-go/tools/cache"
 
-	api "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
-	velerov1api "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
-	velerov1client "github.com/vmware-tanzu/velero/pkg/generated/clientset/versioned/typed/velero/v1"
-	velerov1informers "github.com/vmware-tanzu/velero/pkg/generated/informers/externalversions/velero/v1"
-	velerov1listers "github.com/vmware-tanzu/velero/pkg/generated/listers/velero/v1"
-	"github.com/vmware-tanzu/velero/pkg/label"
-	"github.com/vmware-tanzu/velero/pkg/metrics"
-	"github.com/vmware-tanzu/velero/pkg/persistence"
-	"github.com/vmware-tanzu/velero/pkg/plugin/clientmgmt"
-	pkgrestore "github.com/vmware-tanzu/velero/pkg/restore"
-	"github.com/vmware-tanzu/velero/pkg/util/collections"
-	kubeutil "github.com/vmware-tanzu/velero/pkg/util/kube"
-	"github.com/vmware-tanzu/velero/pkg/util/logging"
+	api "github.com/j4m3s-s/velero/pkg/apis/velero/v1"
+	velerov1api "github.com/j4m3s-s/velero/pkg/apis/velero/v1"
+	velerov1client "github.com/j4m3s-s/velero/pkg/generated/clientset/versioned/typed/velero/v1"
+	velerov1informers "github.com/j4m3s-s/velero/pkg/generated/informers/externalversions/velero/v1"
+	velerov1listers "github.com/j4m3s-s/velero/pkg/generated/listers/velero/v1"
+	"github.com/j4m3s-s/velero/pkg/label"
+	"github.com/j4m3s-s/velero/pkg/metrics"
+	"github.com/j4m3s-s/velero/pkg/persistence"
+	"github.com/j4m3s-s/velero/pkg/plugin/clientmgmt"
+	pkgrestore "github.com/j4m3s-s/velero/pkg/restore"
+	"github.com/j4m3s-s/velero/pkg/util/collections"
+	kubeutil "github.com/j4m3s-s/velero/pkg/util/kube"
+	"github.com/j4m3s-s/velero/pkg/util/logging"
 
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
@@ -63,16 +63,16 @@ var nonRestorableResources = []string{
 	"events.events.k8s.io",
 
 	// Don't ever restore backups - if appropriate, they'll be synced in from object storage.
-	// https://github.com/vmware-tanzu/velero/issues/622
+	// https://github.com/j4m3s-s/velero/issues/622
 	"backups.velero.io",
 
 	// Restores are cluster-specific, and don't have value moving across clusters.
-	// https://github.com/vmware-tanzu/velero/issues/622
+	// https://github.com/j4m3s-s/velero/issues/622
 	"restores.velero.io",
 
 	// Restic repositories are automatically managed by Velero and will be automatically
 	// created as needed if they don't exist.
-	// https://github.com/vmware-tanzu/velero/issues/1113
+	// https://github.com/j4m3s-s/velero/issues/1113
 	"resticrepositories.velero.io",
 }
 

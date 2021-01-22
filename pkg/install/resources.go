@@ -19,7 +19,7 @@ package install
 import (
 	"time"
 
-	velerov1api "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
+	velerov1api "github.com/j4m3s-s/velero/pkg/apis/velero/v1"
 
 	corev1 "k8s.io/api/core/v1"
 	rbacv1beta1 "k8s.io/api/rbac/v1beta1"
@@ -28,8 +28,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/vmware-tanzu/velero/config/crd/crds"
-	"github.com/vmware-tanzu/velero/pkg/buildinfo"
+	"github.com/j4m3s-s/velero/config/crd/crds"
+	"github.com/j4m3s-s/velero/pkg/buildinfo"
 )
 
 // Use "latest" if the build process didn't supply a version

@@ -19,11 +19,11 @@ package delete
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/vmware-tanzu/velero/pkg/client"
-	"github.com/vmware-tanzu/velero/pkg/cmd/cli/backup"
-	"github.com/vmware-tanzu/velero/pkg/cmd/cli/backuplocation"
-	"github.com/vmware-tanzu/velero/pkg/cmd/cli/restore"
-	"github.com/vmware-tanzu/velero/pkg/cmd/cli/schedule"
+	"github.com/j4m3s-s/velero/pkg/client"
+	"github.com/j4m3s-s/velero/pkg/cmd/cli/backup"
+	"github.com/j4m3s-s/velero/pkg/cmd/cli/backuplocation"
+	"github.com/j4m3s-s/velero/pkg/cmd/cli/restore"
+	"github.com/j4m3s-s/velero/pkg/cmd/cli/schedule"
 )
 
 func NewCommand(f client.Factory) *cobra.Command {

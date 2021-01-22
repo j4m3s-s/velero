@@ -22,9 +22,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	velerov1api "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
-	"github.com/vmware-tanzu/velero/pkg/metrics"
-	velerotest "github.com/vmware-tanzu/velero/pkg/test"
+	velerov1api "github.com/j4m3s-s/velero/pkg/apis/velero/v1"
+	"github.com/j4m3s-s/velero/pkg/metrics"
+	velerotest "github.com/j4m3s-s/velero/pkg/test"
 )
 
 func TestPVBHandler(t *testing.T) {

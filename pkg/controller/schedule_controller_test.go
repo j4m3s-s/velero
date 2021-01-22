@@ -31,12 +31,12 @@ import (
 	core "k8s.io/client-go/testing"
 	"k8s.io/client-go/tools/cache"
 
-	velerov1api "github.com/vmware-tanzu/velero/pkg/apis/velero/v1"
-	"github.com/vmware-tanzu/velero/pkg/builder"
-	"github.com/vmware-tanzu/velero/pkg/generated/clientset/versioned/fake"
-	informers "github.com/vmware-tanzu/velero/pkg/generated/informers/externalversions"
-	"github.com/vmware-tanzu/velero/pkg/metrics"
-	velerotest "github.com/vmware-tanzu/velero/pkg/test"
+	velerov1api "github.com/j4m3s-s/velero/pkg/apis/velero/v1"
+	"github.com/j4m3s-s/velero/pkg/builder"
+	"github.com/j4m3s-s/velero/pkg/generated/clientset/versioned/fake"
+	informers "github.com/j4m3s-s/velero/pkg/generated/informers/externalversions"
+	"github.com/j4m3s-s/velero/pkg/metrics"
+	velerotest "github.com/j4m3s-s/velero/pkg/test"
 )
 
 func TestProcessSchedule(t *testing.T) {
@@ -344,7 +344,7 @@ func TestGetNextRunTime(t *testing.T) {
 }
 
 func TestParseCronSchedule(t *testing.T) {
-	// From https://github.com/vmware-tanzu/velero/issues/30, where we originally were using cron.Parse(),
+	// From https://github.com/j4m3s-s/velero/issues/30, where we originally were using cron.Parse(),
 	// which treats the first field as seconds, and not minutes. We want to use cron.ParseStandard()
 	// instead, which has the first field as minutes.
 

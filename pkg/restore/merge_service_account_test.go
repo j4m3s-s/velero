@@ -25,7 +25,7 @@ import (
 	corev1api "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 
-	velerotest "github.com/vmware-tanzu/velero/pkg/test"
+	velerotest "github.com/j4m3s-s/velero/pkg/test"
 )
 
 var mergedServiceAccountsBenchmarkResult *unstructured.Unstructured
