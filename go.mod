@@ -1,4 +1,4 @@
-module github.com/vmware-tanzu/velero
+module github.com/j4m3s-s/velero
 
 go 1.15
 
